@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Gendered Family Word Masker 🏳️‍⚧️",
+  "version": "1.0",
+  "description": "Hides gendered family member words in Iranian languages (Farsi, Kurdish, Azeri-Turkish, Turkmen, Arabic) behind a trans flag emoji.",
+  "permissions": [],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["family_words.js", "content.js"],
+    "css": ["style.css"],
+    "run_at": "document_idle"
+  }]
+}
